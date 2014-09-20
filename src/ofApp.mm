@@ -3,7 +3,18 @@ static float const markerWidth = 1188;
 static float const markerHeight = 897;
 //--------------------------------------------------------------
 void ofApp::setup(){
+#if DEBUG
+    ofSetLogLevel(OF_LOG_VERBOSE);
+#else
+    ofSetLogLevel(OF_LOG_SILENT);
+#endif
     ofDisableArbTex(); // we need GL_TEXTURE_2D for our models coords.
+    glShadeModel(GL_SMOOTH); //some model / light stuff
+    light.enable();
+    ofEnableSeparateSpecularLight();
+#if DEBUG
+    shader.load("shaders/locust_shading.vert","shaders/locust_shading.frag");
+#endif
     model.loadModel("goldenlocust.obj", true);
     modelTexture.loadImage("goldenlocust.png");
     ofxQCAR * qcar = ofxQCAR::getInstance();
@@ -17,6 +28,8 @@ void ofApp::setup(){
     timeDiff = 0;
     soundPlayer.loadSound("explosion.wav");
     soundPlayer.setMultiPlay(true);
+    
+    
 }
 
 //--------------------------------------------------------------
@@ -91,9 +104,9 @@ void ofApp::draw(){
         ofEnableNormalizedTexCoords();
         
         qcar->begin();
-        glShadeModel(GL_SMOOTH);
-        ofEnableSeparateSpecularLight();
-        light.enable();
+#if DEBUG
+        shader.begin();
+#endif
         for(int i = 0; i < locusts.size() ; i++)
         {
             ofPushStyle();
@@ -107,10 +120,9 @@ void ofApp::draw(){
             locusts[i]->draw();
             ofPopStyle();
         }
-        light.disable();
-        ofDisableLighting();
-        ofDisableSeparateSpecularLight();
-        
+#if DEBUG
+        shader.end();
+#endif
         qcar->end();
         
         ofDisableNormalizedTexCoords();
@@ -177,7 +189,18 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::exit(){
-    
+    ofxQCAR * qcar = ofxQCAR::getInstance();
+    qcar->exit();
+    while (locusts.size()>0) {
+        Locust* locust = *locusts.end();
+        locust->~Locust();
+        locusts.pop_back();
+    }
+    model.clear();
+    modelTexture.clear();
+    sequesce.unloadSequence();
+    soundPlayer.unloadSound();
+    shader.unload();
 }
 
 //--------------------------------------------------------------

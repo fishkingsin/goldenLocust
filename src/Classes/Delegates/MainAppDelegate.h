@@ -9,5 +9,5 @@
 #import "ofxiOSAppDelegate.h"
 
 @interface MainAppDelegate : ofxiOSAppDelegate
-
+@property (nonatomic, retain) UINavigationController* navigationController;
 @end

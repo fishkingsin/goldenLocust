@@ -39,6 +39,9 @@ class ofApp : public ofxiOSApp {
     ofLight light;
     float timeDiff;
     ofxiOSSoundPlayer soundPlayer;
+    
+    ofShader shader;
+
 };
 
 
