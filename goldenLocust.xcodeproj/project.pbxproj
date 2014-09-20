@@ -15,6 +15,10 @@
 		1A6C5EBC19CD2DF90072F6A5 /* MainAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A6C5EBB19CD2DF90072F6A5 /* MainAppDelegate.mm */; };
 		1A6C5EC119CD30510072F6A5 /* locust_shading.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1A6C5EBF19CD30510072F6A5 /* locust_shading.frag */; };
 		1A6C5EC219CD30510072F6A5 /* locust_shading.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1A6C5EC019CD30510072F6A5 /* locust_shading.vert */; };
+		1A8851F319CDC00700B8AE3B /* GeneralData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8851F219CDC00700B8AE3B /* GeneralData.m */; };
+		1ABE665219CDAA7B00233AC1 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE665019CDAA7B00233AC1 /* ContentViewController.m */; };
+		1ABE665319CDAA7B00233AC1 /* ContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABE665119CDAA7B00233AC1 /* ContentViewController.xib */; };
+		1ABE665519CDADAE00233AC1 /* content.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ABE665419CDADAE00233AC1 /* content.plist */; };
 		1AD27D1519CC0C2D009BEC76 /* ofxAnimatable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD27D0D19CC0C2D009BEC76 /* ofxAnimatable.cpp */; };
 		1AD27D1619CC0C2D009BEC76 /* ofxAnimatableFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD27D0F19CC0C2D009BEC76 /* ofxAnimatableFloat.cpp */; };
 		1AD27D1719CC0C2D009BEC76 /* ofxAnimatableOfColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD27D1119CC0C2D009BEC76 /* ofxAnimatableOfColor.cpp */; };
@@ -140,7 +144,14 @@
 		1A6C5EBB19CD2DF90072F6A5 /* MainAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainAppDelegate.mm; sourceTree = "<group>"; };
 		1A6C5EBF19CD30510072F6A5 /* locust_shading.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = locust_shading.frag; sourceTree = "<group>"; };
 		1A6C5EC019CD30510072F6A5 /* locust_shading.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = locust_shading.vert; sourceTree = "<group>"; };
+		1A8851F119CDC00700B8AE3B /* GeneralData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralData.h; sourceTree = "<group>"; };
+		1A8851F219CDC00700B8AE3B /* GeneralData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralData.m; sourceTree = "<group>"; };
+		1A88525C19CDC41600B8AE3B /* goldenLocust copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goldenLocust copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA18353F9701B01731DFADF /* poppack1.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = poppack1.h; path = ../../../addons/ofxAssimpModelLoader/libs/assimp/include/Compiler/poppack1.h; sourceTree = SOURCE_ROOT; };
+		1ABE664F19CDAA7B00233AC1 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		1ABE665019CDAA7B00233AC1 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		1ABE665119CDAA7B00233AC1 /* ContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentViewController.xib; sourceTree = "<group>"; };
+		1ABE665419CDADAE00233AC1 /* content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = content.plist; sourceTree = "<group>"; };
 		1AD27D0D19CC0C2D009BEC76 /* ofxAnimatable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxAnimatable.cpp; sourceTree = "<group>"; };
 		1AD27D0E19CC0C2D009BEC76 /* ofxAnimatable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxAnimatable.h; sourceTree = "<group>"; };
 		1AD27D0F19CC0C2D009BEC76 /* ofxAnimatableFloat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxAnimatableFloat.cpp; sourceTree = "<group>"; };
@@ -344,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* goldenLocust.app */,
+				1A88525C19CDC41600B8AE3B /* goldenLocust copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -366,6 +378,9 @@
 				1A3DDE8B19CD94E3003BF173 /* TutorialViewController.h */,
 				1A3DDE8619CD91A7003BF173 /* TutorialViewController.mm */,
 				1A3DDE8719CD91A7003BF173 /* TutorialViewController.xib */,
+				1ABE664F19CDAA7B00233AC1 /* ContentViewController.h */,
+				1ABE665019CDAA7B00233AC1 /* ContentViewController.m */,
+				1ABE665119CDAA7B00233AC1 /* ContentViewController.xib */,
 			);
 			name = ViewControllers;
 			path = Classes/ViewControllers;
@@ -388,6 +403,16 @@
 				1A6C5EC019CD30510072F6A5 /* locust_shading.vert */,
 			);
 			path = shaders;
+			sourceTree = "<group>";
+		};
+		1A8851ED19CDB95200B8AE3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A8851F119CDC00700B8AE3B /* GeneralData.h */,
+				1A8851F219CDC00700B8AE3B /* GeneralData.m */,
+			);
+			name = Models;
+			path = Classes/Models;
 			sourceTree = "<group>";
 		};
 		1AD27D0B19CC0C2D009BEC76 /* ofxAnimatable */ = {
@@ -487,6 +512,7 @@
 		1AD3C36019CBE9F2002D7945 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				1ABE665419CDADAE00233AC1 /* content.plist */,
 				1A6C5EBE19CD30510072F6A5 /* shaders */,
 				1AD3C3C219CBFC22002D7945 /* qcar_assets */,
 			);
@@ -761,6 +787,7 @@
 		E4D8936A11527B74007E1F53 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				1A8851ED19CDB95200B8AE3B /* Models */,
 				1A6C5EB419CD2DAC0072F6A5 /* Views */,
 				1A6C5EB519CD2DAC0072F6A5 /* ViewControllers */,
 				1A6C5EB619CD2DAC0072F6A5 /* Delegates */,
@@ -890,12 +917,14 @@
 				1AD27D7019CC193D009BEC76 /* Icon-Small-50@2x.png in Resources */,
 				1AD27D6E19CC193D009BEC76 /* Icon-76@2x.png in Resources */,
 				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
+				1ABE665319CDAA7B00233AC1 /* ContentViewController.xib in Resources */,
 				1AD27D7419CC193D009BEC76 /* Icon@2x.png in Resources */,
 				1AD27D6C19CC193D009BEC76 /* Icon-72@2x.png in Resources */,
 				1AD27D6519CC193D009BEC76 /* Default.png in Resources */,
 				1AD27D5019CC193D009BEC76 /* appicon-72.png in Resources */,
 				1AD27D4F19CC193D009BEC76 /* appicon-60@3x.png in Resources */,
 				1AD27D6819CC193D009BEC76 /* Icon-40@2x.png in Resources */,
+				1ABE665519CDADAE00233AC1 /* content.plist in Resources */,
 				1AD27D5819CC193D009BEC76 /* appicon-Small.png in Resources */,
 				1AD27D6019CC193D009BEC76 /* Default-Landscape.png in Resources */,
 				1AD27D7519CC193D009BEC76 /* iTunesArtwork in Resources */,
@@ -971,12 +1000,14 @@
 				1AD27D1619CC0C2D009BEC76 /* ofxAnimatableFloat.cpp in Sources */,
 				1AD27D2019CC0DBC009BEC76 /* Locust.mm in Sources */,
 				1AD27D1819CC0C2D009BEC76 /* ofxAnimatableOfPoint.cpp in Sources */,
+				1ABE665219CDAA7B00233AC1 /* ContentViewController.m in Sources */,
 				1A6C5EB919CD2DCD0072F6A5 /* MainViewController.mm in Sources */,
 				8DED5056525646FA71980866 /* ofxAssimpModelLoader.cpp in Sources */,
 				B8846EF8E504895A4A9EFEC0 /* ofxAssimpTexture.cpp in Sources */,
 				1A5C096819CD4C2000AC91F3 /* ofAppViewController.mm in Sources */,
 				4AC3477DFE845CBAB197C801 /* ofxQCAR.mm in Sources */,
 				1AD27D1519CC0C2D009BEC76 /* ofxAnimatable.cpp in Sources */,
+				1A8851F319CDC00700B8AE3B /* GeneralData.m in Sources */,
 				1A3DDE8819CD91A7003BF173 /* TutorialViewController.mm in Sources */,
 				B3B7C0797F5A2CE169C0F9D2 /* ofxQCAR_EAGLView.mm in Sources */,
 				3F73EDDE2E305B99E21534A5 /* ofxQCAR_Utils.mm in Sources */,
@@ -1044,7 +1075,7 @@
 				COMPRESS_PNG_FILES = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=0";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
 				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;

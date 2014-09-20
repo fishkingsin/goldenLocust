@@ -51,7 +51,7 @@
     button = [self makeButtonWithFrame:screenRect
                                andText:@"Start"];
 
-    [self addChildViewController:[[[TutorialViewController alloc]init]autorelease]];
+
     
     [button addTarget:self action:@selector(button1Pressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
@@ -63,7 +63,16 @@
                                                                                                           style:UIBarButtonItemStylePlain
                                                                                                          target:self
                                                                                                          action:@selector(settingBarButtonPress)]autorelease];
+    
+    [self addTutorial];
+    
 
+
+}
+-(void) addTutorial
+{
+    TutorialViewController* tutorialViewController = [[[TutorialViewController alloc]initWithNibName:@"TutorialViewController" bundle:nil]autorelease];
+    [self.navigationController pushViewController: tutorialViewController animated:YES];
 }
 - (void)button1Pressed:(id)sender {
     ofAppViewController *viewController;
@@ -71,8 +80,8 @@
                                                                  app:new ofApp()] autorelease];
     
     [self.navigationController pushViewController:viewController animated:YES];
-    self.navigationController.navigationBar.topItem.title = @"ofApp";
-
+//    self.navigationController.navigationBar.topItem.title = @"ofApp";
+    [self.navigationController.navigationItem setHidesBackButton:YES animated:YES];
 
 }
 -(void)settingBarButtonPress
@@ -82,7 +91,7 @@
 
 -(void)infoBarButtonPress
 {
-    
+    [self addTutorial];
 }
 - (void)didReceiveMemoryWarning
 {

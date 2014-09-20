@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface GeneralData : NSObject
-
++ (GeneralData*)sharedInstance;
 @end
