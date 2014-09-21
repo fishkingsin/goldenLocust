@@ -6,7 +6,7 @@
 //
 //
 
-#import <UIKit/UIKit.h>
+#import "ofxiOSViewController.h"
 
 @interface MainViewController : UIViewController
 

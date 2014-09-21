@@ -3,7 +3,11 @@
 #include "ofAppiOSWindow.h"
 
 int main(){
+#if DEBUG
+    bool bUseNative = true;
+#else
     bool bUseNative = false;
+#endif
 	ofAppiOSWindow * window = new ofAppiOSWindow();
     window->enableDepthBuffer();
     window->enableRetina();

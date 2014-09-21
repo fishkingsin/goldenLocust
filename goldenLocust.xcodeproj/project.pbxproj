@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A2D8BDD19CEBEE600384069 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A2D8BDB19CEBEE600384069 /* MainViewController.mm */; };
+		1A2D8BDE19CEBEE600384069 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A2D8BDC19CEBEE600384069 /* MainViewController.xib */; };
 		1A3DDE8219CD5CCA003BF173 /* icon-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3DDE8119CD5CCA003BF173 /* icon-info.png */; };
 		1A3DDE8819CD91A7003BF173 /* TutorialViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DDE8619CD91A7003BF173 /* TutorialViewController.mm */; };
 		1A3DDE8919CD91A7003BF173 /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3DDE8719CD91A7003BF173 /* TutorialViewController.xib */; };
 		1A5C096819CD4C2000AC91F3 /* ofAppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C096719CD4C2000AC91F3 /* ofAppViewController.mm */; };
-		1A6C5EB919CD2DCD0072F6A5 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A6C5EB819CD2DCD0072F6A5 /* MainViewController.mm */; };
 		1A6C5EBC19CD2DF90072F6A5 /* MainAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A6C5EBB19CD2DF90072F6A5 /* MainAppDelegate.mm */; };
 		1A6C5EC119CD30510072F6A5 /* locust_shading.frag in Resources */ = {isa = PBXBuildFile; fileRef = 1A6C5EBF19CD30510072F6A5 /* locust_shading.frag */; };
 		1A6C5EC219CD30510072F6A5 /* locust_shading.vert in Resources */ = {isa = PBXBuildFile; fileRef = 1A6C5EC019CD30510072F6A5 /* locust_shading.vert */; };
@@ -132,6 +133,8 @@
 		18DF8898970A5F1F067CEB6C /* ofxQCAR.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 30; name = ofxQCAR.mm; path = ../../../addons/ofxQCAR/src/ofxQCAR.mm; sourceTree = SOURCE_ROOT; };
 		18E880FC20A80713F11CC4F1 /* QCAR.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = QCAR.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/QCAR.h; sourceTree = SOURCE_ROOT; };
 		1A003E49CF5FBBBEA3C049E8 /* NonCopyable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = NonCopyable.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/NonCopyable.h; sourceTree = SOURCE_ROOT; };
+		1A2D8BDB19CEBEE600384069 /* MainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
+		1A2D8BDC19CEBEE600384069 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		1A3DDE8119CD5CCA003BF173 /* icon-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-info.png"; path = "bin/data/icon-info.png"; sourceTree = "<group>"; };
 		1A3DDE8619CD91A7003BF173 /* TutorialViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TutorialViewController.mm; sourceTree = "<group>"; };
 		1A3DDE8719CD91A7003BF173 /* TutorialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
@@ -139,7 +142,6 @@
 		1A5C096619CD4C2000AC91F3 /* ofAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofAppViewController.h; sourceTree = "<group>"; };
 		1A5C096719CD4C2000AC91F3 /* ofAppViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofAppViewController.mm; sourceTree = "<group>"; };
 		1A6C5EB719CD2DCD0072F6A5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		1A6C5EB819CD2DCD0072F6A5 /* MainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
 		1A6C5EBA19CD2DF90072F6A5 /* MainAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainAppDelegate.h; sourceTree = "<group>"; };
 		1A6C5EBB19CD2DF90072F6A5 /* MainAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainAppDelegate.mm; sourceTree = "<group>"; };
 		1A6C5EBF19CD30510072F6A5 /* locust_shading.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = locust_shading.frag; sourceTree = "<group>"; };
@@ -371,8 +373,6 @@
 		1A6C5EB519CD2DAC0072F6A5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1A6C5EB719CD2DCD0072F6A5 /* MainViewController.h */,
-				1A6C5EB819CD2DCD0072F6A5 /* MainViewController.mm */,
 				1A5C096619CD4C2000AC91F3 /* ofAppViewController.h */,
 				1A5C096719CD4C2000AC91F3 /* ofAppViewController.mm */,
 				1A3DDE8B19CD94E3003BF173 /* TutorialViewController.h */,
@@ -381,6 +381,9 @@
 				1ABE664F19CDAA7B00233AC1 /* ContentViewController.h */,
 				1ABE665019CDAA7B00233AC1 /* ContentViewController.m */,
 				1ABE665119CDAA7B00233AC1 /* ContentViewController.xib */,
+				1A6C5EB719CD2DCD0072F6A5 /* MainViewController.h */,
+				1A2D8BDB19CEBEE600384069 /* MainViewController.mm */,
+				1A2D8BDC19CEBEE600384069 /* MainViewController.xib */,
 			);
 			name = ViewControllers;
 			path = Classes/ViewControllers;
@@ -939,6 +942,7 @@
 				1AD27D6619CC193D009BEC76 /* Default@2x.png in Resources */,
 				1AD3C3C919CBFC22002D7945 /* HongKongMAp.xml in Resources */,
 				1AD27D7119CC193D009BEC76 /* Icon-Small.png in Resources */,
+				1A2D8BDE19CEBEE600384069 /* MainViewController.xib in Resources */,
 				1AD27D5C19CC193D009BEC76 /* appicon@2x.png in Resources */,
 				1AD27D6719CC193D009BEC76 /* Icon-40.png in Resources */,
 				1AD27D7319CC193D009BEC76 /* Icon.png in Resources */,
@@ -1001,8 +1005,8 @@
 				1AD27D2019CC0DBC009BEC76 /* Locust.mm in Sources */,
 				1AD27D1819CC0C2D009BEC76 /* ofxAnimatableOfPoint.cpp in Sources */,
 				1ABE665219CDAA7B00233AC1 /* ContentViewController.m in Sources */,
-				1A6C5EB919CD2DCD0072F6A5 /* MainViewController.mm in Sources */,
 				8DED5056525646FA71980866 /* ofxAssimpModelLoader.cpp in Sources */,
+				1A2D8BDD19CEBEE600384069 /* MainViewController.mm in Sources */,
 				B8846EF8E504895A4A9EFEC0 /* ofxAssimpTexture.cpp in Sources */,
 				1A5C096819CD4C2000AC91F3 /* ofAppViewController.mm in Sources */,
 				4AC3477DFE845CBAB197C801 /* ofxQCAR.mm in Sources */,
@@ -1075,7 +1079,7 @@
 				COMPRESS_PNG_FILES = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=0";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
 				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;

@@ -8,6 +8,8 @@
 
 #import "TutorialViewController.h"
 #import "ContentViewController.h"
+#import "ofAppViewController.h"
+#import "ofApp.h"
 static NSString *kNameKey = @"nameKey";
 static NSString *kImageKey = @"imageKey";
 @interface TutorialViewController ()<UIScrollViewDelegate>
@@ -126,7 +128,12 @@ static NSString *kImageKey = @"imageKey";
     }
 }
 - (void)button1Pressed:(id)sender {
-    [self removeFromParentViewController];
+    [self.navigationController popViewControllerAnimated:YES];
+    ofAppViewController *viewController;
+    viewController = [[[ofAppViewController alloc] initWithFrame:[[UIScreen mainScreen] bounds]
+                                                             app:new ofApp()] autorelease];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 // at the end of scroll animation, reset the boolean used when scrolls originate from the UIPageControl
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
