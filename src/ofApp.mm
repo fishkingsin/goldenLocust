@@ -8,10 +8,12 @@ void ofApp::setup(){
 #else
     ofSetLogLevel(OF_LOG_SILENT);
 #endif
+    ofxiOSSetOrientation(OF_ORIENTATION_DEFAULT);
     ofDisableArbTex(); // we need GL_TEXTURE_2D for our models coords.
     glShadeModel(GL_SMOOTH); //some model / light stuff
     light.enable();
     ofEnableSeparateSpecularLight();
+    
 #if DEBUG
     shader.load("shaders/locust_shading.vert","shaders/locust_shading.frag");
 #endif

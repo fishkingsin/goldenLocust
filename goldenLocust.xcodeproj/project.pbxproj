@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A2D8BDD19CEBEE600384069 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A2D8BDB19CEBEE600384069 /* MainViewController.mm */; };
 		1A2D8BDE19CEBEE600384069 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A2D8BDC19CEBEE600384069 /* MainViewController.xib */; };
+		1A3A197519CEDC39003A5D1E /* MyNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3A197419CEDC39003A5D1E /* MyNavigationViewController.m */; };
 		1A3DDE8219CD5CCA003BF173 /* icon-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3DDE8119CD5CCA003BF173 /* icon-info.png */; };
 		1A3DDE8819CD91A7003BF173 /* TutorialViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DDE8619CD91A7003BF173 /* TutorialViewController.mm */; };
 		1A3DDE8919CD91A7003BF173 /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3DDE8719CD91A7003BF173 /* TutorialViewController.xib */; };
@@ -135,6 +136,8 @@
 		1A003E49CF5FBBBEA3C049E8 /* NonCopyable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = NonCopyable.h; path = ../../../addons/ofxQCAR/libs/qcar/include/QCAR/NonCopyable.h; sourceTree = SOURCE_ROOT; };
 		1A2D8BDB19CEBEE600384069 /* MainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
 		1A2D8BDC19CEBEE600384069 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		1A3A197319CEDC39003A5D1E /* MyNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavigationViewController.h; sourceTree = "<group>"; };
+		1A3A197419CEDC39003A5D1E /* MyNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavigationViewController.m; sourceTree = "<group>"; };
 		1A3DDE8119CD5CCA003BF173 /* icon-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-info.png"; path = "bin/data/icon-info.png"; sourceTree = "<group>"; };
 		1A3DDE8619CD91A7003BF173 /* TutorialViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TutorialViewController.mm; sourceTree = "<group>"; };
 		1A3DDE8719CD91A7003BF173 /* TutorialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
@@ -384,6 +387,8 @@
 				1A6C5EB719CD2DCD0072F6A5 /* MainViewController.h */,
 				1A2D8BDB19CEBEE600384069 /* MainViewController.mm */,
 				1A2D8BDC19CEBEE600384069 /* MainViewController.xib */,
+				1A3A197319CEDC39003A5D1E /* MyNavigationViewController.h */,
+				1A3A197419CEDC39003A5D1E /* MyNavigationViewController.m */,
 			);
 			name = ViewControllers;
 			path = Classes/ViewControllers;
@@ -1000,6 +1005,7 @@
 				1A6C5EBC19CD2DF90072F6A5 /* MainAppDelegate.mm in Sources */,
 				E4D8936F11527B74007E1F53 /* ofApp.mm in Sources */,
 				3B8120368B4FCCD80883BAF3 /* ofxAssimpAnimation.cpp in Sources */,
+				1A3A197519CEDC39003A5D1E /* MyNavigationViewController.m in Sources */,
 				483FA4F6D5FA6422C559B1F5 /* ofxAssimpMeshHelper.cpp in Sources */,
 				1AD27D1619CC0C2D009BEC76 /* ofxAnimatableFloat.cpp in Sources */,
 				1AD27D2019CC0DBC009BEC76 /* Locust.mm in Sources */,

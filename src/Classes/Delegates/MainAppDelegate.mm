@@ -27,7 +27,7 @@
      *
      **/
     
-    self.navigationController = [[[UINavigationController alloc] init] autorelease];
+    self.navigationController = [[[MyNavigationViewController alloc] init] autorelease];
     [self.window setRootViewController:self.navigationController];
 //    [self.window setRootViewController:[[[TutorialViewController alloc]initWithNibName:@"TutorialViewController" bundle:nil]autorelease]];
     [self.navigationController pushViewController:[[[MainViewController alloc] init] autorelease]
@@ -44,5 +44,8 @@
     self.navigationController = nil;
     [super dealloc];
 }
-
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
 @end
